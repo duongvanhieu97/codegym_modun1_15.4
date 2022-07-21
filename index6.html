@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+<label>
+    Nhập số
+    <input type="text" id="input6" placeholder="Nhập số">
+</label>
+<div id="result">
+    <button onclick="result()">Click</button>
+</div>
+<script>
+    function result() {
+        let a = document.getElementById('input6').value;
+        if (a < 0) {
+            document.getElementById('result').innerHTML = a + 'Không phải số nguyên dương'
+        }else  {
+            document.getElementById('result').innerHTML = a + 'Là số nguyên dương'
+        }
+    }
+</script>
+</body>
+</html>
