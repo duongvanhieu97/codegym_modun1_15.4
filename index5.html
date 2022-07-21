@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<label>
+    Nhập số a:
+    <input type="text" id="inputA">
+</label>
+<br>
+<label>
+    Nhập số b:
+    <input type="text" id="inputB">
+</label>
+<br>
+<label>
+    Nhập số c:
+    <input type="text" id="inputC">
+</label>
+<div id="result">
+    <button onclick="result()">Hiển thị</button>
+</div>
+<script>
+    function result() {
+        let a = document.getElementById('inputA').value;
+        let b = document.getElementById('inputB').value;
+        let c = document.getElementById('inputC').value;
+        if (a<=b && a<=c) {
+            document.getElementById('result').innerHTML = 'a là số nhỏ nhất ' + a;
+        } else if (b<= c) {
+            document.getElementById('result').innerHTML = 'b là số nhỏ nhất ' + b;
+        }else {
+            document.getElementById('result').innerHTML = 'c là số nhỏ nhất ' + c;
+        }
+    }
+</script>
+</body>
+</html>

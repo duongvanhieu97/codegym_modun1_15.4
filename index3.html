@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <label>
+        Nhập số nguyên
+        <input type="text" placeholder="Nhập số nguyên" id="input3">
+    </label>
+</div>
+<div onclick="result()" id="result">
+    <button>Tính giai thừa</button>
+</div>
+<script>
+    function result() {
+        let num = +document.getElementById('input3').value;
+        let sum = 1;
+        for (let i = 1; i <= num; i++) {
+            sum *= i
+        }
+        document.getElementById('result').innerHTML = 'Tông giai thừa: '+ sum
+    }
+</script>
+</body>
+</html>
